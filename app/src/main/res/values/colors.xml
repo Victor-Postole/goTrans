@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#106AD7</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="themeBlue">#106AD7</color>
+    <color name="darkBlue">#2D3844</color>
+    <color name="tabTitle">#C3DAF5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="lightBlue">#7BB0EC</color>
+    <color name="gray">#AEB6BC</color>
+    <color name="lightGray">#FCFAFB</color>
+    <color name="backgroundGray">#F0F0F0</color>
+    <color name="darkGray">#616A73</color>
+    <color name="orange">#F3C15E</color>
+</resources>
