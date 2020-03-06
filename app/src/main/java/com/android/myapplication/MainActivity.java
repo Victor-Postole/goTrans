@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.creeaza_transport);
 
-//test
+//testa
 //        ListView findListView = (ListView)findViewById(R.id.notificationListView);
 //
 //
