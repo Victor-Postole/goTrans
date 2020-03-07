@@ -41,7 +41,7 @@
                     android:layout_marginBottom="15dp"
                     android:background="@drawable/layer_container_blue"
                     android:orientation="vertical"
-                    android:padding="0"
+                    android:padding="0dp"
                     android:paddingHorizontal="20dp">
 
                     <LinearLayout
@@ -169,11 +169,11 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="0"
+                    android:layout_marginTop="0dp"
                     android:layout_marginBottom="15dp"
                     android:background="@drawable/layer_container_white_border_gray"
                     android:orientation="vertical"
-                    android:padding="0"
+                    android:padding="0dp"
                     android:paddingHorizontal="20dp">
 
                     <LinearLayout
@@ -248,7 +248,7 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
-                        android:layout_marginLeft="0"
+                        android:layout_marginLeft="0dp"
                         android:layout_marginRight="200dp"
                         android:background="@color/themeBlue" />
 
@@ -274,11 +274,11 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="0"
+                    android:layout_marginTop="0dp"
                     android:layout_marginBottom="15dp"
                     android:background="@drawable/layer_container_white_border_gray"
                     android:orientation="vertical"
-                    android:padding="0"
+                    android:padding="0dp"
                     android:paddingHorizontal="20dp">
 
                     <LinearLayout
@@ -353,7 +353,7 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
-                        android:layout_marginLeft="0"
+                        android:layout_marginLeft="0dp"
                         android:layout_marginRight="200dp"
                         android:background="@color/themeBlue" />
 
@@ -379,7 +379,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="0"
+                    android:layout_marginTop="0dp"
                     android:layout_marginBottom="15dp"
                     android:background="@drawable/layer_container_white_border_gray"
                     android:orientation="vertical"
@@ -645,7 +645,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="0"
+                    android:layout_marginTop="0dp"
                     android:layout_marginBottom="15dp"
                     android:background="@drawable/layer_container_white_border_gray"
                     android:orientation="vertical"
@@ -802,7 +802,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="0"
+                    android:layout_marginTop="0dp"
                     android:layout_marginBottom="15dp"
                     android:background="@drawable/layer_container_white_border_gray"
                     android:orientation="vertical"
@@ -881,7 +881,7 @@
                                         android:id="@+id/imageView16"
                                         android:layout_width="60dp"
                                         android:layout_height="wrap_content"
-                                        android:layout_weight="0"
+                                        android:layout_weight="1"
                                         app:srcCompat="@drawable/component_4" />
 
                                     <TextView
@@ -936,7 +936,7 @@
                                         android:id="@+id/imageView16"
                                         android:layout_width="60dp"
                                         android:layout_height="wrap_content"
-                                        android:layout_weight="0"
+                                        android:layout_weight="1"
                                         app:srcCompat="@drawable/component_4" />
 
                                     <TextView

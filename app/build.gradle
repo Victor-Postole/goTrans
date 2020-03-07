@@ -37,7 +37,6 @@ dependencies {
     implementation "com.github.parse-community.Parse-SDK-Android:parse:1.23.1"
 }
 
-
 allprojects {
     repositories {
         maven { url "https://jitpack.io" }

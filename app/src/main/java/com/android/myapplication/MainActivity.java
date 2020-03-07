@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.creeaza_transport);
+        setContentView(R.layout.registration_second_step);
 
 //        ListView findListView = (ListView)findViewById(R.id.notificationListView);
 //
