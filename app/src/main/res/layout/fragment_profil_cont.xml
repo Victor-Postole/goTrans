@@ -46,7 +46,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
             android:scrollbarSize="4dp"
-            android:text="@string/email_input"
+            android:text="@string/label_email"
             android:textColor="#2D3844"
             android:textSize="17sp"
             android:textStyle="bold" />
@@ -59,7 +59,7 @@
             android:background="@drawable/input_border"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="@string/email_input"
+            android:text="@string/input_email"
             android:textColor="#B7BABE"
             android:textSize="14sp" />
 
@@ -69,7 +69,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
             android:scrollbarSize="4dp"
-            android:text="@string/telefon"
+            android:text="@string/label_telefon"
             android:textColor="#2D3844"
             android:textSize="17sp"
             android:textStyle="bold" />
@@ -82,7 +82,7 @@
             android:background="@drawable/input_border"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="@string/telefon"
+            android:text="@string/label_email"
             android:textColor="#B7BABE"
             android:textSize="14sp" />
 
@@ -112,7 +112,7 @@
                 android:layout_marginBottom="5dp"
                 android:layout_weight="1"
                 android:scrollbarSize="4dp"
-                android:text="@string/platitor_tva_label"
+                android:text="@string/label_platitor_tva"
                 android:textColor="#2D3844"
                 android:textSize="17sp"
                 android:textStyle="bold" />
@@ -146,7 +146,7 @@
                 android:background="@drawable/input_border"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="@string/platitor_tva_input"
+                android:text="@string/label_platitor_tva"
                 android:textColor="#B7BABE"
                 android:textSize="14sp" />
 
@@ -173,7 +173,7 @@
             android:background="@drawable/input_border"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="@string/numar_ordine_input"
+            android:text="@string/input_numar_ordine"
             android:textColor="#B7BABE"
             android:textSize="14sp" />
 
@@ -184,7 +184,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
             android:scrollbarSize="4dp"
-            android:text="@string/adresa"
+            android:text="@string/label_adresa"
             android:textColor="#2D3844"
             android:textSize="17sp"
             android:textStyle="bold" />
@@ -198,7 +198,7 @@
             android:background="@drawable/input_border"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="@string/adresa"
+            android:text="@string/label_adresa"
             android:textColor="#B7BABE"
             android:textSize="14sp" />
 
@@ -215,7 +215,7 @@
                 android:layout_marginBottom="5dp"
                 android:layout_weight="1"
                 android:scrollbarSize="4dp"
-                android:text="@string/oras"
+                android:text="@string/label_oras"
                 android:textColor="#2D3844"
                 android:textSize="17sp"
                 android:textStyle="bold" />
@@ -228,7 +228,7 @@
                 android:layout_marginBottom="5dp"
                 android:layout_weight="1"
                 android:scrollbarSize="4dp"
-                android:text="@string/tara"
+                android:text="@string/label_tara"
                 android:textColor="#2D3844"
                 android:textSize="17sp"
                 android:textStyle="bold" />
@@ -251,7 +251,7 @@
                 android:background="@drawable/input_border"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="@string/oras"
+                android:text="@string/label_oras"
                 android:textColor="#B7BABE"
                 android:textSize="14sp" />
 
@@ -263,7 +263,7 @@
                 android:background="@drawable/input_border"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="@string/tara"
+                android:text="@string/label_tara"
                 android:textColor="#B7BABE"
                 android:textSize="14sp" />
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF">
+    android:textColor="@color/white">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -15,125 +15,154 @@
     </RelativeLayout>
 
     <ScrollView
-        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <RelativeLayout
-            android:id="@+id/relativeLayout"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="382dp"
+            android:background="@drawable/layer_main_white"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="40dp"
-                android:layout_marginRight="20dp"
-                android:background="@drawable/layer_main_white"
-                android:orientation="vertical"
-                android:paddingLeft="20dp"
-                android:paddingRight="20dp">
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/add_driver_icon" />
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:autoText="false"
+                    android:layout_marginHorizontal="11dp"
                     android:paddingVertical="20dp"
-                    android:text="@string/adauga_sofer"
+                    android:text="@string/title_adauga_masina"
                     android:textAlignment="center"
                     android:textColor="@color/darkBlue"
                     android:textSize="25sp"
                     android:textStyle="bold" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="#EFEFEF" />
-
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:scrollbarSize="4dp"
-                    android:text="@string/adauga_nume_label"
-                    android:textColor="#2D3844"
-                    android:textSize="17sp"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="13dp"
-                    android:background="@drawable/input_border"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="@string/adauga_nume_label"
-                    android:textColor="#B7BABE"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:scrollbarSize="4dp"
-                    android:text="@string/adauga_prenume_label"
-                    android:textColor="#2D3844"
-                    android:textSize="17sp"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="13dp"
-                    android:background="@drawable/input_border"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="@string/adauga_prenume_label"
-                    android:textColor="#B7BABE"
-                    android:textSize="14sp"
-                    android:textStyle="normal" />
-
-                <TextView
-                    android:id="@+id/telefon"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:scrollbarSize="4dp"
-                    android:text="@string/email"
-                    android:textColor="#2D3844"
-                    android:textSize="17sp"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="13dp"
-                    android:background="@drawable/input_border"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="@string/email_input"
-                    android:textColor="#B7BABE"
-                    android:textSize="14sp" />
-
-                <Button
-                    android:id="@+id/button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="40dp"
-                    android:layout_marginBottom="20dp"
-                    android:background="@color/colorPrimary"
-                    android:text="@string/buton_adauga"
-                    android:textColor="@color/colorAccent" />
             </LinearLayout>
-        </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_marginBottom="50dp"/>
+
+
+            <TextView
+                android:id="@+id/adauga_masina_nume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/label_adauga_nume"
+                android:textColor="@color/darkBlue"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/input_border"
+                android:autofillHints="true"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="@string/label_adauga_nume"
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/label_adauga_prenume"
+                android:textColor="@color/darkBlue"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/adauga_masina_prenume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="13dp"
+                android:autofillHints="true"
+                android:background="@drawable/input_border"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="@string/label_adauga_prenume"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/telefon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/label_email"
+                android:textColor="@color/darkBlue"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/adauga_masina_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="13dp"
+                android:autofillHints="true"
+                android:background="@drawable/input_border"
+                android:drawableLeft="@drawable/email_icon"
+                android:drawableStart="@drawable/email_icon"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="@string/input_email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/buton_adauga_masina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/colorPrimary"
+                android:drawableEnd="@drawable/buton_icon"
+                android:drawableRight="@drawable/buton_icon"
+                android:padding="10dp"
+                android:text="@string/buton_adauga"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -44,8 +44,8 @@
                     android:layout_height="wrap_content"
                     android:autoText="false"
                     android:paddingVertical="20dp"
-                    android:text="Adauga credit"
                     android:textAlignment="center"
+                    android:text="Adauga credit"
                     android:textColor="@color/darkBlue"
                     android:textSize="25sp"
 

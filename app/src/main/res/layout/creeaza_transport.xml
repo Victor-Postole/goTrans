@@ -17,210 +17,226 @@
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <RelativeLayout
-            android:id="@+id/relativeLayout"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="87dp"
+            android:background="@drawable/layer_main_white"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="30dp"
+                android:text="@string/title_creeaza_transport"
+                android:textAlignment="center"
+                android:textColor="@color/themeBlue"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="20dp"
+                android:text="@string/sub_title_detalii_livrare"
+                android:textAlignment="center"
+                android:textColor="@color/darkBlue"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/label_expeditor"
+                android:textColor="@color/darkBlue"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/transport_register_expeditor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/input_border"
+                android:ems="10"
+                android:autofillHints="true"
+                android:inputType="textPersonName"
+                android:hint="@string/selecteaza_expeditor"
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/label_destinatar"
+                android:textColor="@color/darkBlue"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/transport_register_destinatar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/input_border"
+                android:ems="10"
+                android:autofillHints="true"
+                android:inputType="text"
+                android:hint="@string/input_selectati_destinatarul"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/telefon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/label_selectati_locul"
+                android:textColor="@color/darkBlue"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/transport_register_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/input_border"
+                android:ems="10"
+                android:autofillHints="true"
+                android:inputType="textPersonName"
+                android:hint="@string/input_selecteaza_numar"
+               android:textColor="@color/gray"
+                android:textSize="15sp" />
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="40dp"
-                android:layout_marginRight="20dp"
-                android:background="@drawable/layer_main_white"
-                android:orientation="vertical"
-                android:paddingLeft="20dp"
-                android:paddingRight="20dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:autoText="false"
-                    android:paddingVertical="30dp"
-                    android:text="@string/creeaza_transport"
-                    android:textAlignment="center"
-                    android:textColor="@color/themeBlue"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="#EFEFEF" />
-
-                <TextView
-                    android:id="@+id/textView6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingVertical="20dp"
-                    android:text="@string/detalii_livrare"
-                    android:textAlignment="center"
-                    android:textColor="@color/darkBlue"
-                    android:textSize="17sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:scrollbarSize="4dp"
-                    android:text="@string/expeditor"
-                    android:textColor="#2D3844"
-                    android:textSize="17sp"
-                    android:textStyle="bold" />
+                android:orientation="horizontal">
 
                 <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="13dp"
-                    android:background="@drawable/input_border"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="@string/selecteaza_expeditor"
-                    android:textColor="#B7BABE"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:scrollbarSize="4dp"
-                    android:text="@string/destinatar"
-                    android:textColor="#2D3844"
-                    android:textSize="17sp"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="13dp"
-                    android:background="@drawable/input_border"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="@string/selectati_destinatarul"
-                    android:textColor="#B7BABE"
-                    android:textSize="14sp"
-                    android:textStyle="normal" />
-
-                <TextView
-                    android:id="@+id/telefon"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:scrollbarSize="4dp"
-                    android:text="@string/selectati_locul"
-                    android:textColor="#2D3844"
-                    android:textSize="17sp"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="13dp"
-                    android:background="@drawable/input_border"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="@string/selecteaza_numar"
-                    android:textColor="#B7BABE"
-                    android:textSize="14sp" />
-
-                <LinearLayout
+                    android:id="@+id/transport_register_localitate"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <EditText
-                        android:id="@+id/editText3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="5dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/input_border"
-                        android:ems="10"
-                        android:inputType="textPersonName"
-                        android:text="@string/localitate"
-                        android:textColor="#B7BABE"
-                        android:textSize="14sp" />
-
-                    <EditText
-                        android:id="@+id/editText"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="@drawable/input_border"
-                        android:ems="10"
-                        android:inputType="textPersonName"
-                        android:text="@string/tara"
-                        android:textColor="#B7BABE"
-                        android:textSize="14sp" />
-                </LinearLayout>
-
-                <TextView
-                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:scrollbarSize="4dp"
-                    android:text="@string/locul_incarcarii"
-                    android:textColor="#2D3844"
-                    android:textSize="17sp"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="13dp"
+                    android:layout_weight="1"
+                    android:autofillHints="true"
                     android:background="@drawable/input_border"
                     android:ems="10"
+                    android:layout_marginEnd="5dp"
+                    android:hint="@string/input_localitate"
                     android:inputType="textPersonName"
-                    android:text="@string/selectati_locul_data"
-                    android:textColor="#B7BABE"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:scrollbarSize="4dp"
-                    android:text="@string/documente_anexate"
-                    android:textColor="#2D3844"
-                    android:textSize="17sp"
-                    android:textStyle="bold" />
+                    android:textColor="@color/gray"
+                    android:textSize="15sp" />
 
                 <EditText
+                    android:id="@+id/transport_register_tara"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="13dp"
+                    android:layout_weight="1"
                     android:background="@drawable/input_border"
                     android:ems="10"
+                    android:autofillHints="true"
                     android:inputType="textPersonName"
-                    android:text="@string/documente"
-                    android:textColor="#B7BABE"
-                    android:textSize="14sp" />
-
-                <Button
-                    android:id="@+id/button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="40dp"
-                    android:layout_marginBottom="20dp"
-                    android:background="@color/colorPrimary"
-                    android:text="@string/buton_continua"
-                    android:textColor="@color/colorAccent" />
+                    android:hint="@string/label_tara"
+                   android:textColor="@color/gray"
+                    android:textSize="15sp" />
             </LinearLayout>
-        </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/label_locul_incarcarii"
+                android:textColor="@color/darkBlue"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/transport_register_locul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/input_border"
+                android:ems="10"
+                android:autofillHints="true"
+                android:inputType="textPersonName"
+                android:hint="@string/input_selectati_locul_data"
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/label_documente_anexate"
+                android:textColor="@color/darkBlue"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/transport_register_documente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/input_border"
+                android:ems="10"
+                android:autofillHints="true"
+                android:inputType="textPersonName"
+                android:hint="@string/input_documente"
+               android:textColor="@color/gray"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/colorPrimary"
+                android:drawableEnd="@drawable/buton_icon"
+                android:drawableRight="@drawable/buton_icon"
+                android:padding="10dp"
+                android:text="@string/buton_continua"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

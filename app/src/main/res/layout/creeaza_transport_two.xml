@@ -17,306 +17,315 @@
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <RelativeLayout
-            android:id="@+id/relativeLayout"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@drawable/layer_main_white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="30dp"
+                android:text="@string/title_creeaza_transport"
+                android:textAlignment="center"
+                android:textColor="@color/themeBlue"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EFEFEF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="20dp"
+                android:text="@string/sub_title_detalii_livrare"
+                android:textAlignment="center"
+                android:textColor="@color/darkBlue"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/label_marci_numere"
+                android:textColor="@color/darkBlue"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/transport_register_marci"
+                android:autofillHints="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/input_border"
+                android:ems="10"
+                android:hint="@string/input_marci_numere"
+                android:inputType="textPersonName"
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/label_colete"
+                android:textColor="@color/darkBlue"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/transport_register_numar_colete"
+                android:autofillHints="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/input_border"
+                android:ems="10"
+                android:hint="@string/input_colete"
+                android:inputType="textPersonName"
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/label_amabalare"
+                android:textColor="@color/darkBlue"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/transport_register_mod_ambalare"
+                android:autofillHints="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/input_border"
+                android:ems="10"
+                android:drawableStart="@drawable/box_icon"
+                android:drawableLeft="@drawable/box_icon"
+                android:drawablePadding="10dp"
+                android:hint="@string/input_amabalare"
+                android:inputType="textPersonName"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/label_natura_marfii"
+                android:textColor="@color/darkBlue"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:autofillHints="true"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/input_border"
+                android:ems="10"
+                android:hint="@string/input_natura_marfii"
+                android:inputType="textPersonName"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="40dp"
-                android:layout_marginRight="20dp"
-                android:background="@drawable/layer_main_white"
-                android:orientation="vertical"
-                android:paddingLeft="20dp"
-                android:paddingRight="20dp">
+                android:layout_marginBottom="5dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:autoText="false"
-                    android:text="@string/creeaza_transport"
-                    android:textAlignment="center"
-                    android:textColor="@color/themeBlue"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:paddingVertical="30dp"/>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="#EFEFEF" />
-
-                <TextView
-                    android:id="@+id/textView6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/detalii_livrare"
-                    android:textAlignment="center"
-                    android:textColor="@color/darkBlue"
-                    android:textSize="17sp"
-                    android:textStyle="bold"
-                    android:paddingVertical="20dp"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:scrollbarSize="4dp"
-                    android:text="@string/label_marci_numere"
-                    android:textColor="#2D3844"
-                    android:textSize="17sp"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="13dp"
-                    android:background="@drawable/input_border"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="@string/input_marci_numere"
-                    android:textColor="#B7BABE"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:scrollbarSize="4dp"
-                    android:text="@string/label_colete"
-                    android:textColor="#2D3844"
-                    android:textSize="17sp"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="13dp"
-                    android:background="@drawable/input_border"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="@string/input_colete"
-                    android:textColor="#B7BABE"
-                    android:textSize="14sp"
-                    android:textStyle="normal" />
-
-                <TextView
-                    android:id="@+id/telefon"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:scrollbarSize="4dp"
-                    android:text="@string/label_amabalare"
-                    android:textColor="#2D3844"
-                    android:textSize="17sp"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="13dp"
-                    android:background="@drawable/input_border"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="@string/input_amabalare"
-                    android:textColor="#B7BABE"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:id="@+id/telefon"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:scrollbarSize="4dp"
-                    android:text="@string/label_natura_marfii"
-                    android:textColor="#2D3844"
-                    android:textSize="17sp"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="13dp"
-                    android:background="@drawable/input_border"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="@string/input_natura_marfii"
-                    android:textColor="#B7BABE"
-                    android:textSize="14sp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginBottom="5dp"
-                    android:orientation="horizontal">
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
-
-                    <LinearLayout
+                    <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:scrollbarSize="4dp"
+                        android:text="@string/label_numar_static"
+                        android:textColor="@color/darkBlue"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
 
-                        <TextView
-                            android:id="@+id/telefon2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:layout_marginBottom="5dp"
-                            android:layout_weight="1"
-                            android:scrollbarSize="4dp"
-                            android:text="@string/label_numar_static"
-                            android:textColor="#2D3844"
-                            android:textSize="17sp"
-                            android:textStyle="bold" />
-
-                        <EditText
-                            android:id="@+id/editText3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginRight="5dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/input_border"
-                            android:ems="10"
-                            android:inputType="textPersonName"
-                            android:text="@string/input_numar_static"
-                            android:textColor="#B7BABE"
-                            android:textSize="14sp" />
-                    </LinearLayout>
-
-                    <LinearLayout
+                    <EditText
+                        android:id="@+id/transport_register_numar_static"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/telefon3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:layout_marginBottom="5dp"
-                            android:layout_weight="1"
-                            android:scrollbarSize="4dp"
-                            android:text="@string/label_greutate_bruta"
-                            android:textColor="#2D3844"
-                            android:textSize="17sp"
-                            android:textStyle="bold" />
-
-                        <EditText
-                            android:id="@+id/editText"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:background="@drawable/input_border"
-                            android:ems="10"
-                            android:inputType="textPersonName"
-                            android:text="@string/input_greutate_bruta"
-                            android:textColor="#B7BABE"
-                            android:textSize="14sp" />
-                    </LinearLayout>
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:autofillHints="true"
+                        android:background="@drawable/input_border"
+                        android:ems="10"
+                        android:hint="@string/input_numar_static"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/gray"
+                        android:textSize="14sp" />
                 </LinearLayout>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:scrollbarSize="4dp"
-                    android:text="@string/label_cubaj"
-                    android:textColor="#2D3844"
-                    android:textSize="17sp"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="13dp"
-                    android:background="@drawable/input_border"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="@string/input_cubaj"
-                    android:textColor="#B7BABE"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:scrollbarSize="4dp"
-                    android:text="@string/label_instructiunile_expeditorului"
-                    android:textColor="#2D3844"
-                    android:textSize="17sp"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="13dp"
-                    android:background="@drawable/input_border"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="@string/input_instructiunile_expeditorului"
-                    android:textColor="#B7BABE"
-                    android:textSize="14sp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginBottom="5dp"
-                    android:orientation="horizontal">
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
-
-                    <LinearLayout
+                    <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginRight="5dp"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:scrollbarSize="4dp"
+                        android:text="@string/label_greutate_bruta"
+                        android:textColor="@color/darkBlue"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
 
-                        <Button
-                            android:id="@+id/button4"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/input_border"
-                            android:text="@string/buton_inapoi"
-                            android:textColor="@color/darkBlue" />
-                    </LinearLayout>
-
-                    <LinearLayout
+                    <EditText
+                        android:id="@+id/transport_register_greutate_bruta"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <Button
-                            android:id="@+id/button"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/buton_continua"
-                            android:textColor="@color/colorAccent" />
-                    </LinearLayout>
+                        android:layout_height="wrap_content"
+                        android:autofillHints="true"
+                        android:background="@drawable/input_border"
+                        android:ems="10"
+                        android:hint="@string/input_greutate_bruta"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/gray"
+                        android:textSize="14sp" />
                 </LinearLayout>
-
             </LinearLayout>
-        </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/label_cubaj"
+                android:textColor="@color/darkBlue"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/transport_register_cubaj"
+                android:autofillHints="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/input_border"
+                android:ems="10"
+                android:hint="@string/input_cubaj"
+                android:inputType="textPersonName"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:scrollbarSize="4dp"
+                android:text="@string/label_instructiunile_expeditorului"
+                android:textColor="@color/darkBlue"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/transport_register_instructiunile_expeditorului"
+                android:autofillHints="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/input_border"
+                android:ems="10"
+                android:hint="@string/input_instructiunile_expeditorului"
+                android:inputType="textPersonName"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/buton_register_inapoi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/input_border"
+                        android:text="@string/buton_inapoi"
+                        android:textColor="@color/darkBlue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/buton_register_continua"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:drawableEnd="@drawable/buton_icon"
+                        android:drawableRight="@drawable/buton_icon"
+                        android:padding="10dp"
+                        android:text="@string/buton_continua"
+                        android:textColor="@color/colorAccent" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

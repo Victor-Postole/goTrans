@@ -42,9 +42,8 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:autoText="false"
                     android:paddingVertical="20dp"
-                    android:text="@string/adauga_masina"
+                    android:text="@string/title_adauga_masina"
                     android:textAlignment="center"
                     android:textColor="@color/darkBlue"
                     android:textSize="25sp"
@@ -53,7 +52,7 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="#EFEFEF" />
+                    android:background="@color/gray" />
 
 
                 <TextView
@@ -62,7 +61,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
                     android:scrollbarSize="4dp"
-                    android:text="@string/adauga_nume_label"
+                    android:text="@string/label_adauga_nume"
                     android:textColor="#2D3844"
                     android:textSize="17sp"
                     android:textStyle="bold" />
@@ -75,7 +74,7 @@
                     android:background="@drawable/input_border"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:text="@string/adauga_nume_label"
+                    android:text="@string/label_adauga_nume"
                     android:textColor="#B7BABE"
                     android:textSize="14sp" />
 
@@ -85,7 +84,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
                     android:scrollbarSize="4dp"
-                    android:text="@string/adauga_prenume_label"
+                    android:text="@string/label_adauga_prenume"
                     android:textColor="#2D3844"
                     android:textSize="17sp"
                     android:textStyle="bold" />
@@ -98,7 +97,7 @@
                     android:background="@drawable/input_border"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:text="@string/adauga_prenume_label"
+                    android:text="@string/label_adauga_prenume"
                     android:textColor="#B7BABE"
                     android:textSize="14sp"
                     android:textStyle="normal" />

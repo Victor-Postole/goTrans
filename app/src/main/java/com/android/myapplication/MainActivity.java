@@ -2,7 +2,9 @@ package com.android.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,13 +15,14 @@ import android.widget.TextView;
 
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
+
 public class MainActivity extends AppCompatActivity implements  View.OnClickListener{
 
+    public static TextView data;
     String[]Car_brand= {"MAN 200", "MERCEDES E20","RENAULT A40","MAN 200", "MERCEDES E20","MAN 200", "MERCEDES E20","RENAULT A40","MAN 200", "MERCEDES E20"};
     String[]Car_number= {"B 27 RTJ", "IL 01 TMS", "CT 40 RMS","B 27 RTJ", "IL 01 TMS","B 27 RTJ", "IL 01 TMS", "CT 40 RMS","B 27 RTJ", "IL 01 TMS"};
     String[]Car_type = {"Frigorific, 15 tone","Cisterna 25 tone", "Container 50 tone","Frigorific, 15 tone","Cisterna 25 tone","Frigorific, 15 tone","Cisterna 25 tone", "Container 50 tone","Frigorific, 15 tone","Cisterna 25 tone"};
     String[]Car_drivers = {"Marian Trandafir", "Ionica Mihalache","Marcel Octavian","Mike Markula","Samsung Ionel","Xing", "Smantanel","Marica","Novac","MMAMA"};
-
 
     LinearLayout sterge, modifica;
     BottomSheetDialog bottomSheetDialog;
@@ -27,7 +30,16 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.registration_second_step);
+
+
+
+//        Intent myIntent = new Intent(MainActivity.this, ValleyJson.class);
+//        MainActivity.this.startActivity(myIntent);
+//
+
+        setContentView(R.layout.adauga_sofer);
+
+
 
 //        ListView findListView = (ListView)findViewById(R.id.notificationListView);
 //
@@ -46,13 +58,13 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
 
         createBottomShitDialog();
 
+
+
     }
 
     @Override
     public  void onClick(View view) {
-        switch (view.getId()){
 
-        }
     }
 
     private void createBottomShitDialog(){

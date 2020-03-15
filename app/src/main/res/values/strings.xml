@@ -1,16 +1,118 @@
 <resources>
-    <string name="inregistrare">Inregistrare</string>
+
+    <!--Titles Section-->
+
+    <string name="title_autentificarae">Autentificare</string>
+    <string name="title_inregistrare">Inregistrare</string>
+    <string name="title_date_companie">Completeaza datele companiei tale</string>
+    <string name="title_creaza_cont_administrare">Creaza un cont de administrare</string>
+    <string name="title_detalii_administrare">Detalii administrare</string>
+    <string name="title_cont_administrator">Cont administrator</string>
+    <string name="title_termeni_conditii">Termeni si Conditii</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_creeaza_transport">CREEAZA TRANSPORT NOU - eCRM</string>
+    <string name="title_adauga_sofer">Adauga sofer</string>
+    <string name="title_adauga_masina">Adauga masina</string>
+
+
+    <!--Sub-Titles Section-->
+
+
+    <string name="sub_title_step_one">Pasul 1/2</string>
+    <string name="sub_title_step_two">Pasul 2/2</string>
+    <string name="sub_title_informatie_importanta">Informatie importanta</string>
+    <string name="sub_title_expeditie">Expeditie in derulare</string>
+    <string name="sub_title_detalii_livrare">Detalii livrare</string>
+    <string name="sub_title_observatii_semenaturi">Observatii si semnaturi</string>
+    <string name="sub_title_plata_echipaj">Plata si echipaj</string>
+
+    <!--    Label Section-->
+
+    <string name="label_username_adresa_mail">Username/adresa de e-mail</string>
+    <string name="label_parola">Parola</string>
+    <string name="label_confirma_parola">Confirma parola</string>
+    <string name="label_ai_uitat_parola">Ai uitat parola?</string>
+    <string name="label_nume">Nume</string>
+    <string name="label_prenume">Prenume</string>
+    <string name="label_email">E-mail</string>
+    <string name="label_telefon">Telefon</string>
+    <string name="label_adresa">Adresa</string>
+    <string name="label_oras">Oras</string>
+    <string name="label_tara">Tara</string>
+    <string name="label_user_name">UserName</string>
+    <string name="label_termeni">Am citit si sunt de acord cu</string>
+    <string name="label_termeni_redirect">termenii si conditiile</string>
+    <!-- Creeaza transport -->
+    <string name="label_expeditor">01. Expeditor</string>
+    <string name="label_destinatar">02. Destinatar</string>
+    <string name="label_selectati_locul">03. Locul prevazut pentru livrarea marfii</string>
+    <string name="label_locul_incarcarii">04. Locul si data incarcarii marfii</string>
+    <string name="label_documente_anexate">05. Documente anexate</string>
+    <string name="label_marci_numere">06. Marci si numere</string>
+    <string name="label_colete">07. Numar colete</string>
+    <string name="label_amabalare">08. Mod de ambalare</string>
+    <string name="label_natura_marfii">09. Natura marfii</string>
+    <string name="label_numar_static">10. Numar static</string>
+    <string name="label_greutate_bruta">11. Greutate bruta</string>
+    <string name="label_cubaj">12. Cubaj</string>
+    <string name="label_instructiunile_expeditorului">13. Instructiunile Expeditorului</string>
+    <string name="label_instructiuni_plata">14. Instructiuni plata</string>
+    <string name="label_suma_plata">15. Suma de plata</string>
+    <string name="label_transportator">16. Transportator</string>
+    <string name="label_marca_autovehicul">17. Marca autovehicului</string>
+    <string name="label_transportatori">17. Transportatori succesivi</string>
+    <string name="label_rezerve">18. Rezerve si observatii ale transportatorilor</string>
+    <string name="label_acorduri">19. Acorduri speciale</string>
+    <string name="label_incheiat">21. Incheiat la:</string>
+    <string name="label_tone">Tone</string>
+    <string name="label_numar">Numar</string>
+    <string name="label_tabel">20. Tabel de plata</string>
+    <string name="label_pret">Pretul transportatorului</string>
+    <string name="label_taxe_suplimentare">Taxe suplimentare</string>
+    <string name="label_taxe_vamale">Taxe vamale</string>
+    <string name="label_alte_taxe">Alte taxe</string>
+    <string name="label_destinatar_ul">Destinatar</string>
+    <string name="label_adauga_nume">Nume</string>
+    <string name="label_adauga_prenume">Prenume</string>
+    <string name="label_platitor_tva">Platitor TVA?</string>
+
+    <!--    Inputs Section-->
+
+    <string name="input_username_adresa_mail">Username sau adresa de e-mail</string>
+    <!-- Creeaza transport -->
+    <string name="input_selectati_destinatarul">Selecteaza sau introduceti numele companiei</string>
+    <string name="input_selecteaza_numar">Strada, numarul</string>
+    <string name="input_localitate">Localitate</string>
+    <string name="input_selectati_locul_data">Locul si data</string>
+    <string name="input_documente">Documente anexate</string>
+    <string name="input_marci_numere">Marci si numere</string>
+    <string name="input_colete">Colete</string>
+    <string name="input_amabalare">Mod de ambalare</string>
+    <string name="input_natura_marfii">Natura marfii</string>
+    <string name="input_numar_static">Numar static</string>
+    <string name="input_greutate_bruta">Greutate bruta</string>
+    <string name="input_cubaj">Cubaj</string>
+    <string name="input_instructiunile_expeditorului">Instructiunile Expeditorului</string>
+    <string name="input_instructiuni_plata">Instructiuni de plata</string>
+    <string name="input_plata_expediere">Plata la expediere</string>
+    <string name="input_mod_plata">Mod plata</string>
+    <string name="input_suma_plata">Suma de plata</string>
+    <string name="input_transportator">Denumire companie</string>
+    <string name="input_marca_autovehicul">Marca</string>
+    <string name="input_tone">Tone</string>
+    <string name="input_transportatori">Nume, adresa, tara</string>
+    <string name="input_rezerve">Rezerve si observatii ale transportatorilor</string>
+    <string name="input_acorduri">DA</string>
+    <string name="input_incheiat">Adresa</string>
+
+
+
     <string name="introductionLogo">Gotrans Logo</string>
     <string name="copyright">2019 GOTRANS SRL toate drepturile sunt rezervate</string>
-    <string name="step_one">Pasul 1/2</string>
-    <string name="step_two">Pasul 2/2</string>
-    <string name="app_name">My Application</string>
-    <string name="tara">Tara</string>
-    <string name="oras">Oras</string>
-    <string name="nume">Nume</string>
-    <string name="email">E-mail</string>
-    <string name="telefon">Telefon</string>
-    <string name="adresa">Adresa</string>
+
+    <string name="app_name">GoTrans SRL</string>
+
+
     <string name="sterge">Sterge</string>
     <string name="modifica">Modifica</string>
 
@@ -50,80 +152,22 @@
     <string name="upload_factura">Upload  factura</string>
     <string name="upload_contract">Upload  contract</string>
 
-
-    <!-- Creeaza transport -->
-    <string name="creeaza_transport">CREEAZA TRANSPORT NOU -eCRM</string>
-    <string name="detalii_livrare">Detalii livrare</string>
-    <string name="expeditor">01. Expeditor</string>
     <string name="selecteaza_expeditor">Selectati expeditorul</string>
-    <string name="destinatar">02. Destinatar</string>
-    <string name="selectati_destinatarul">Selecteaza Destinatar sau introduceti numele companiei</string>
-    <string name="selectati_locul">03. Locul prevazut pentru livrarea marfii</string>
-    <string name="selecteaza_numar">Strada, numarul</string>
-    <string name="localitate">Localitate</string>
-    <string name="locul_incarcarii">04. Locul si data incarcarii marfii</string>
-    <string name="selectati_locul_data">Locul si data</string>
-    <string name="documente_anexate">05. Documente anexate</string>
-    <string name="documente">Documente anexate</string>
-    <!-- Creeaza transport two -->
-    <string name="label_marci_numere">06. Marci si numere</string>
-    <string name="input_marci_numere">Marci si numere</string>
-    <string name="label_colete">07. Numar colete</string>
-    <string name="input_colete">Colete</string>
-    <string name="label_amabalare">08. Mod de ambalare</string>
-    <string name="input_amabalare">Mod de ambalare</string>
-    <string name="label_natura_marfii">09. Natura marfii</string>
-    <string name="input_natura_marfii">Natura marfii</string>
-    <string name="label_numar_static">10. Numar static</string>
-    <string name="input_numar_static">Numar static</string>
-    <string name="label_greutate_bruta">11. Greutate bruta</string>
-    <string name="input_greutate_bruta">Greutate bruta</string>
-    <string name="label_cubaj">12. Cubaj</string>
-    <string name="input_cubaj">Cubaj</string>
-    <string name="label_instructiunile_expeditorului">13. Instructiunile Expeditorului</string>
-    <string name="input_instructiunile_expeditorului">Instructiunile Expeditorului</string>
-    <!-- Creeaza transport three-->
-    <string name="label_instructiuni_plata">14. Instructiuni plata</string>
-    <string name="input_instructiuni_plata">Mod plata</string>
-    <string name="input_plata_expediere">Plata la expediere</string>
-    <string name="input_mod_plata">Mod plata</string>
-    <string name="label_suma_plata">15. Suma de plata</string>
-    <string name="input_suma_plata">Suma de plata</string>
-    <string name="label_transportator">16. Transportator</string>
-    <string name="input_transportator">Denumire companie</string>
-    <string name="label_marca_autovehicul">17. Marca autovehicului</string>
-    <string name="input_marca_autovehicul">Marca</string>
-    <string name="label_tone">Tone</string>
-    <string name="input_tone">Tone</string>
-    <string name="label_numar">Numar</string>
+
+
     <string name="input_numar">Numar de circulatie</string>
     <string name="echipaj_unu">Echipaj 1</string>
     <string name="echipaj_doi">Echipaj 2</string>
     <string name="input_echipaj">Nume echipaj</string>
-    <!-- Creaza transport four-->
-    <string name="observatii_semenaturi">Observatii si semnaturi</string>
-    <string name="transportatori_label">17. Transportatori succesivi</string>
-    <string name="transportatori_input">Nume, adresa, tara</string>
-    <string name="rezerve_label">18. Rezerve si observatii ale transportatorilor</string>
-    <string name="rezerve_input">Rezerve si observatii ale transportatorilor</string>
-    <string name="acorduri_label">19. Acorduri speciale</string>
-    <string name="acorduri_input">DA</string>
-    <string name="tabel_label">Tabel de plata</string>
-    <string name="pret_label">Pretul transportatorului</string>
-    <string name="taxe_suplimentare_label">Taxe suplimentare</string>
-    <string name="taxe_vamale_label">Taxe vamale</string>
-    <string name="alte_taxe_label">Alte taxe</string>
-    <string name="expeditor_label">Expeditor</string>
-    <string name="destinatar_label">Destinatar</string>
-    <string name="incheiat_label">20: Incheiat la:</string>
-    <string name="incheiat_input">Adresa</string>
+
+
+
     <string name="data_label">Data</string>
-    <string name="data_input">Data</string>
+    <string name="input_data">Data</string>
 
     <!-- Adauga transport-->
-    <string name="adauga_nume_label">Nume</string>
-    <string name="adauga_prenume_label">Prenume</string>
-    <string name="email_input">Adresa de e-mail</string>
+
+    <string name="input_email">Adresa de e-mail</string>
 
 
     <!-- Felicitari-->
@@ -132,11 +176,10 @@
 
 
     <!-- AdaugaMasina-->
-    <string name="adauga_masina_title">Adauga masina</string>
     <string name="numar_captractor_label">Numar de inmatriculare cap tractor</string>
-    <string name="numar_captractor_input">Dnumar_captractor_label</string>
+    <string name="input_numar_captractor">Dnumar_captractor_label</string>
     <string name="numar_vagon_label">Numar de inmatriculare vagon</string>
-    <string name="numar_vagon_input">Numar de inmatriculare</string>
+    <string name="input_numar_vagon">Numar de inmatriculare</string>
 
 
     <!-- AdaugaCredit-->
@@ -151,13 +194,14 @@
     <!-- profil cont-->
 
     <string name="cui_label">CUI</string>
-    <string name="cui_input">Selectati modul plata e-CRM</string>
-    <string name="platitor_tva_label">Platitor TVA?</string>
-    <string name="platitor_tva_input">Platitor TVA?</string>
+    <string name="input_cui">Selectati modul plata e-CRM</string>
+
     <string name="numar_ordine_label">Numar de ordine</string>
-    <string name="numar_ordine_input">Numar de ordine</string>
+    <string name="input_numar_ordine">Numar de ordine</string>
 
+    <!-- Buttons sections-->
 
+    <string name="buton_autentificare">Autentificare</string>
     <string name="buton_inapoi">Inapoi</string>
     <string name="buton_adauga">Adauga</string>
     <string name="buton_continua">Continua</string>
@@ -169,6 +213,7 @@
     <string name="buton_trimite">Trimite</string>
     <string name="buton_solicita_stergere_cont">Solicita stergere cont</string>
     <string name="buton_incarca_document">Incarca document</string>
+    <string name="buton_termeni_conditii">Sunt de acord cu termenii si conditiile</string>
 
 </resources>
 
