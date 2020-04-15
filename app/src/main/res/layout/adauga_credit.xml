@@ -42,13 +42,11 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:autoText="false"
                     android:paddingVertical="20dp"
                     android:textAlignment="center"
                     android:text="Adauga credit"
                     android:textColor="@color/darkBlue"
                     android:textSize="25sp"
-
                     android:textStyle="bold" />
 
                 <View
@@ -72,7 +70,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
                     android:scrollbarSize="4dp"
-                    android:text="@string/mod_plata_ecrm_label"
+                    android:text="@string/label_mod_plata_ecrm"
                     android:textColor="#2D3844"
                     android:textSize="17sp"
                     android:textStyle="bold" />
@@ -85,8 +83,8 @@
                     android:background="@drawable/input_border"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:text="@string/adauga_numele_card_label"
-                    android:textColor="#B7BABE"
+                    android:hint="@string/label_mod_plata"
+                     android:textColor="@color/gray"
                     android:textSize="14sp" />
 
                 <TextView
@@ -95,7 +93,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
                     android:scrollbarSize="4dp"
-                    android:text="@string/mod_plata_ecrm_label"
+                    android:text="@string/label_mod_plata"
                     android:textColor="#2D3844"
                     android:textSize="17sp"
                     android:textStyle="bold" />
@@ -108,8 +106,8 @@
                     android:background="@drawable/input_border"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:text="@string/adauga_numele_card_label"
-                    android:textColor="#B7BABE"
+                    android:hint="@string/label_mod_plata"
+                     android:textColor="@color/gray"
                     android:textSize="14sp" />
 
                 <View
@@ -133,7 +131,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
                     android:scrollbarSize="4dp"
-                    android:text="@string/adauga_numele_card_label"
+                    android:text="@string/label_adauga_numele_card"
                     android:textColor="#2D3844"
                     android:textSize="17sp"
                     android:textStyle="bold" />
@@ -146,8 +144,8 @@
                     android:background="@drawable/input_border"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:text="@string/adauga_numele_card_label"
-                    android:textColor="#B7BABE"
+                    android:hint="@string/label_adauga_numele_card"
+                     android:textColor="@color/gray"
                     android:textSize="14sp" />
 
                 <TextView
@@ -156,7 +154,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
                     android:scrollbarSize="4dp"
-                    android:text="@string/adagua_numar_card_label"
+                    android:text="@string/label_adagua_numar_card_label"
                     android:textColor="#2D3844"
                     android:textSize="17sp"
                     android:textStyle="bold" />
@@ -169,8 +167,8 @@
                     android:background="@drawable/input_border"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:text="@string/adagua_numar_card_label"
-                    android:textColor="#B7BABE"
+                    android:hint="@string/label_adagua_numar_card_label"
+                     android:textColor="@color/gray"
                     android:textSize="14sp" />
 
                 <LinearLayout
@@ -187,7 +185,7 @@
                         android:layout_marginBottom="5dp"
                         android:layout_weight="1"
                         android:scrollbarSize="4dp"
-                        android:text="@string/data_expirarii_label"
+                        android:text="@string/label_data_expirarii_label"
                         android:textColor="#2D3844"
                         android:textSize="17sp"
                         android:textStyle="bold" />
@@ -200,7 +198,7 @@
                         android:layout_marginBottom="5dp"
                         android:layout_weight="1"
                         android:scrollbarSize="4dp"
-                        android:text="@string/cvv_label"
+                        android:text="@string/label_cvv"
                         android:textColor="#2D3844"
                         android:textSize="17sp"
                         android:textStyle="bold" />
@@ -214,7 +212,6 @@
 
 
                     <EditText
-                        android:id="@+id/editText3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="5dp"
@@ -222,8 +219,8 @@
                         android:background="@drawable/input_border"
                         android:ems="10"
                         android:inputType="textPersonName"
-                        android:text="@string/input_plata_expediere"
-                        android:textColor="#B7BABE"
+                        android:hint="@string/input_plata_expediere"
+                         android:textColor="@color/gray"
                         android:textSize="14sp" />
 
                     <EditText
@@ -234,8 +231,8 @@
                         android:background="@drawable/input_border"
                         android:ems="10"
                         android:inputType="textPersonName"
-                        android:text="@string/input_instructiuni_plata"
-                        android:textColor="#B7BABE"
+                        android:hint="@string/label_cvv"
+                         android:textColor="@color/gray"
                         android:textSize="14sp" />
 
                 </LinearLayout>
@@ -365,7 +362,7 @@
                 </LinearLayout>
 
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/buton_finalizare"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="40dp"

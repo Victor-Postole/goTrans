@@ -10,8 +10,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/layer_top_blue"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="25dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            app:srcCompat="@drawable/back_icon" />
+
     </RelativeLayout>
 
     <ScrollView
@@ -85,7 +98,7 @@
                 android:ems="10"
                 android:autofillHints="true"
                 android:inputType="textPersonName"
-                android:hint="@string/selecteaza_expeditor"
+                android:hint="@string/label_selecteaza_expeditor"
                 android:textColor="@color/gray"
                 android:textSize="15sp" />
 
@@ -225,7 +238,7 @@
                 android:textSize="15sp" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/buton_finalizare"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"

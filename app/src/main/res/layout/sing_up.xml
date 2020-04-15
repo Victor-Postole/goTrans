@@ -10,147 +10,138 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/layer_top_blue"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="25dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
     </RelativeLayout>
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/layer_main_white"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:paddingTop="50dp"
+            android:paddingBottom="15dp"
+            app:srcCompat="@drawable/white_logo" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.9dp"
+            android:background="#EFEFEF" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/circleOne"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/small_circle" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:srcCompat="@drawable/connecting_dots" />
+
+            <View
+                android:id="@+id/circleOne2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/small_circle" />
+
+            <ImageView
+                android:id="@+id/imageView32"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:srcCompat="@drawable/connecting_dots" />
+
+            <View
+                android:id="@+id/circleOne3"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/small_circle" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="217dp"
+            android:paddingTop="50dp"
+            android:paddingBottom="50dp"
+            android:text="GOTRANS contribuie la viitorul general pentru mobilitate prin digitalizarea documentelor aferente transportului de marfuri."
+            android:textAlignment="center"
+            android:textColor="@color/gray"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:lineHeight="30sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.9dp"
+            android:background="#EFEFEF" />
 
         <RelativeLayout
-            android:id="@+id/relativeLayout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="181dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="40dp"
-                android:layout_marginRight="20dp"
-                android:background="@drawable/layer_main_white"
-                android:orientation="vertical"
-                android:paddingLeft="20dp"
-                android:paddingRight="20dp">
+                android:orientation="vertical">
 
-
-                <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="wrap_content"
+                <Button
+                    android:id="@+id/buton_autentificare"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="30dp"
-                    android:paddingTop="50dp"
-                    android:paddingBottom="15dp"
-                    app:srcCompat="@drawable/white_logo" />
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/themeBlue"
+                    android:text="@string/buton_autentificare"
+                    android:textColor="@color/colorAccent" />
 
-                <View
+                <Button
+                    android:id="@+id/buton_inregistrare"
                     android:layout_width="match_parent"
-                    android:layout_height="0.9dp"
-                    android:background="#EFEFEF" />
-
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="30dp"
-                    android:orientation="horizontal">
+                    android:background="@drawable/border_blue"
+                    android:text="@string/buton_inregistrare"
+                    android:textColor="@color/themeBlue" />
 
-                    <View
-                        android:id="@+id/circleOne"
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:background="@drawable/small_circle" />
-
-                    <ImageView
-                        android:id="@+id/imageView3"
-                        android:layout_width="50dp"
-                        android:layout_height="20dp"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        app:srcCompat="@drawable/connecting_dots" />
-
-                    <View
-                        android:id="@+id/circleOne2"
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:background="@drawable/small_circle" />
-
-                    <ImageView
-                        android:id="@+id/imageView32"
-                        android:layout_width="50dp"
-                        android:layout_height="20dp"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        app:srcCompat="@drawable/connecting_dots" />
-
-                    <View
-                        android:id="@+id/circleOne3"
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:background="@drawable/small_circle" />
-
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="217dp"
-                    android:paddingTop="50dp"
-                    android:paddingBottom="50dp"
-                    android:text="GOTRANS contribuie la viitorul general pentru mobilitate prin digitalizarea documentelor aferente transportului de marfuri."
-                    android:textAlignment="center"
-                    android:textColor="#8B959F"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    app:lineHeight="30sp" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0.9dp"
-                    android:background="#EFEFEF" />
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="40dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <Button
-                            android:id="@+id/button"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="10dp"
-                            android:background="@color/colorPrimary"
-                            android:text="Autentificare"
-                            android:textColor="@color/colorAccent" />
-
-                        <Button
-                            android:id="@+id/button2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/border_blue"
-                            android:text="Inregistrare"
-                            android:textColor="#106AD7" />
-
-                    </LinearLayout>
-                </RelativeLayout>
             </LinearLayout>
         </RelativeLayout>
-    </ScrollView>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

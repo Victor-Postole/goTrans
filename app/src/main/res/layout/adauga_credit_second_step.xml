@@ -72,7 +72,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
                     android:scrollbarSize="4dp"
-                    android:text="@string/mod_plata_ecrm_label"
+                    android:text="@string/label_mod_plata_ecrm"
                     android:textColor="#2D3844"
                     android:textSize="17sp"
                     android:textStyle="bold" />
@@ -85,8 +85,8 @@
                     android:background="@drawable/input_border"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:text="@string/adauga_numele_card_label"
-                    android:textColor="#B7BABE"
+                    android:text="@string/input_instructiuni_plata"
+                    android:textColor="@color/gray"
                     android:textSize="14sp" />
 
                 <TextView
@@ -95,7 +95,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
                     android:scrollbarSize="4dp"
-                    android:text="@string/mod_plata_ecrm_label"
+                    android:text="@string/label_mod_plata_ecrm"
                     android:textColor="#2D3844"
                     android:textSize="17sp"
                     android:textStyle="bold" />
@@ -108,8 +108,8 @@
                     android:background="@drawable/input_border"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:text="@string/adauga_numele_card_label"
-                    android:textColor="#B7BABE"
+                    android:text="@string/input_instructiuni_plata"
+                    android:textColor="@color/gray"
                     android:textSize="14sp" />
 
 
@@ -250,13 +250,16 @@
                     android:text="Integer sagittis pulvinar urna, at euismod lorem porta in. Sed vitae volutpat neque, vitae lacinia turpis. Integer sagittis pulvinar urna, at euismod." />
 
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/buton_finalizare"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="40dp"
                     android:layout_marginBottom="20dp"
+                    android:drawableEnd="@drawable/download_icon"
+                    android:drawableRight="@drawable/download_icon"
+                    android:padding="10dp"
                     android:background="@color/colorPrimary"
-                    android:text="@string/buton_finalizare_plata"
+                    android:text="@string/buton_descarca_proforma"
                     android:textColor="@color/colorAccent" />
             </LinearLayout>
         </LinearLayout>

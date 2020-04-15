@@ -9,20 +9,20 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="0dp"
-        android:background="@drawable/layer_container_white"
         android:orientation="vertical"
-        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="horizontal"
             android:paddingHorizontal="20dp"
-            android:paddingTop="20dp"
+            android:paddingLeft="0dp"
+            android:paddingTop="10dp"
+            android:paddingRight="0dp"
             android:paddingBottom="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -31,27 +31,31 @@
 
             <TextView
                 android:id="@+id/ticketNumber"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:padding="5dp"
                 android:text="01"
+                android:textAlignment="center"
                 android:textColor="#333"
-                android:textSize="16sp"
+                android:textSize="12sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/truckBrand"
-                android:layout_width="wrap_content"
+                android:id="@+id/truckBrand_masini"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:padding="5dp"
                 android:text="MAN 200K"
+                android:textAlignment="center"
                 android:textColor="#333"
-                android:textSize="16sp"
+                android:textSize="12sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/carNumber"
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="#D9D9D9"
@@ -62,8 +66,8 @@
                 android:textSize="10sp" />
 
             <TextView
-                android:id="@+id/textView15"
-                android:layout_width="60dp"
+                android:id="@+id/expeditionStatus"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_weight="1"
@@ -79,9 +83,8 @@
 
             <ImageView
                 android:id="@+id/driverGetChanges"
-                android:layout_width="wrap_content"
+                android:layout_width="50dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
                 android:layout_weight="1"
                 android:onClick="showFragmentModifica"
                 android:src="@drawable/dots" />
@@ -104,7 +107,6 @@
                 android:id="@+id/carType"
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
                 android:layout_weight="1"
                 android:text="Frigorific, 15 Tone" />
 
@@ -112,7 +114,6 @@
                 android:id="@+id/textView20"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="40dp"
                 android:layout_weight="1"
                 android:text="eCRM 229978" />
 

@@ -28,11 +28,19 @@
                 android:layout_height="wrap_content"
                 android:background="@color/darkBlue"
                 android:orientation="horizontal"
-                android:paddingLeft="10dp"
-                android:paddingTop="30dp"
+                android:paddingTop="5dp"
                 android:paddingRight="10dp"
                 android:paddingBottom="30dp">
-
+                <ImageView
+                    android:id="@+id/back_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    app:srcCompat="@drawable/back_icon" />
             </LinearLayout>
 
             <LinearLayout
@@ -97,14 +105,13 @@
                         android:textSize="25sp" />
 
                     <TextView
-                        android:id="@+id/textView43"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:gravity="center|right"
                         android:text="Invita un prieten"
                         android:textColor="@color/white"
-                        android:textSize="10sp"
-                        android:gravity="right"/>
+                        android:textSize="10sp" />
                 </LinearLayout>
 
 
@@ -131,11 +138,11 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginVertical="20dp"
                     android:layout_weight="1"
-                    android:padding="15dp"
                     android:background="@drawable/input_gradient_orange"
                     android:orientation="horizontal"
-                    android:layout_marginVertical="20dp">
+                    android:padding="15dp">
 
                     <TextView
                         android:id="@+id/textView42"
@@ -149,12 +156,12 @@
                     <TextView
                         android:id="@+id/textView43"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:gravity="center|right"
                         android:text="Ofera feedback"
                         android:textColor="@color/white"
-                        android:textSize="10sp"
-                        android:gravity="right"/>
+                        android:textSize="10sp" />
                 </LinearLayout>
 
                 <EditText

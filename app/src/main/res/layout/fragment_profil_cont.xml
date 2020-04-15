@@ -99,7 +99,7 @@
                 android:layout_marginBottom="5dp"
                 android:layout_weight="1"
                 android:scrollbarSize="4dp"
-                android:text="@string/cui_label"
+                android:text="@string/label_cui"
                 android:textColor="#2D3844"
                 android:textSize="17sp"
                 android:textStyle="bold" />
@@ -159,7 +159,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
             android:scrollbarSize="4dp"
-            android:text="@string/numar_ordine_label"
+            android:text="@string/label_numar_ordine"
             android:textColor="#2D3844"
             android:textSize="17sp"
             android:textStyle="bold" />

@@ -1,6 +1,8 @@
 <resources>
 
+
     <!--Titles Section-->
+
 
     <string name="title_autentificarae">Autentificare</string>
     <string name="title_inregistrare">Inregistrare</string>
@@ -26,7 +28,9 @@
     <string name="sub_title_observatii_semenaturi">Observatii si semnaturi</string>
     <string name="sub_title_plata_echipaj">Plata si echipaj</string>
 
+
     <!--    Label Section-->
+
 
     <string name="label_username_adresa_mail">Username/adresa de e-mail</string>
     <string name="label_parola">Parola</string>
@@ -75,8 +79,23 @@
     <string name="label_adauga_nume">Nume</string>
     <string name="label_adauga_prenume">Prenume</string>
     <string name="label_platitor_tva">Platitor TVA?</string>
+    <string name="label_cui">CUI</string>
+    <string name="label_data">Data</string>
+    <string name="label_adauga_numele_card">Numele de pe card</string>
+    <string name="label_adagua_numar_card_label">Numarul cardului</string>
+    <string name="label_data_expirarii_label">Data expirarii</string>
+    <string name="label_cvv">CVV</string>
+    <string name="label_mod_plata">Selectati modul de plata</string>
+    <string name="label_mod_plata_ecrm">Selectati modul plata e-CRM</string>
+    <string name="label_numar_ordine">Numar de ordine</string>
+    <string name="label_numar_captractor">Numar de inmatriculare cap tractor</string>
+    <string name="label_numar_vagon">Numar de inmatriculare vagon</string>
+    <string name="label_selecteaza_expeditor">Selectati expeditorul</string>
+    <string name="label__numar_inmatriculare">Numar de inmatriculare cap tractor</string>
+
 
     <!--    Inputs Section-->
+
 
     <string name="input_username_adresa_mail">Username sau adresa de e-mail</string>
     <!-- Creeaza transport -->
@@ -104,17 +123,17 @@
     <string name="input_rezerve">Rezerve si observatii ale transportatorilor</string>
     <string name="input_acorduri">DA</string>
     <string name="input_incheiat">Adresa</string>
+    <string name="input_email">Adresa de e-mail</string>
+    <string name="input_numar">Numar de circulatie</string>
+    <string name="input_echipaj_unu">Echipaj 1</string>
+    <string name="input_echipaj_doi">Echipaj 2</string>
+    <string name="input_echipaj">Nume echipaj</string>
+    <string name="input_numar_captractor">Dnumar_captractor_label</string>
+    <string name="input_numar_vagon">Numar de inmatriculare</string>
+    <string name="input_cui">Selectati modul plata e-CRM</string>
+    <string name="input_numar_ordine">Numar de ordine</string>
+    <string name="input_numar_inmatriculare">Numar de inmatriculare</string>
 
-
-
-    <string name="introductionLogo">Gotrans Logo</string>
-    <string name="copyright">2019 GOTRANS SRL toate drepturile sunt rezervate</string>
-
-    <string name="app_name">GoTrans SRL</string>
-
-
-    <string name="sterge">Sterge</string>
-    <string name="modifica">Modifica</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -134,6 +153,7 @@
     <string name="menu_send">Send</string>
 
     <!-- Navigation items -->
+
     <string name="contul_meu">Contul meu</string>
     <string name="plan_curent">Plan curent</string>
     <string name="upgrade_plan">Upgrade plan</string>
@@ -144,64 +164,35 @@
     <string name="confidentialitate">Confidentialitate</string>
 
     <!-- Optiuni fragment -->
-    <string name="optiuni">Optiuni</string>
-    <string name="document_nou">Document eCRM nou</string>
-    <string name="adauga_client">Adauga client</string>
-    <string name="adauga_sofer">Adauga sofer</string>
-    <string name="adauga_masina">Adauga masina</string>
-    <string name="upload_factura">Upload  factura</string>
-    <string name="upload_contract">Upload  contract</string>
 
-    <string name="selecteaza_expeditor">Selectati expeditorul</string>
-
-
-    <string name="input_numar">Numar de circulatie</string>
-    <string name="echipaj_unu">Echipaj 1</string>
-    <string name="echipaj_doi">Echipaj 2</string>
-    <string name="input_echipaj">Nume echipaj</string>
+    <string name="fragment_optiuni">Optiuni</string>
+    <string name="fragment_document_nou">Document eCRM nou</string>
+    <string name="fragment_adauga_client">Adauga client</string>
+    <string name="fragment_adauga_sofer">Adauga sofer</string>
+    <string name="fragment_adauga_masina">Adauga masina</string>
+    <string name="fragment_upload_factura">Upload  factura</string>
+    <string name="fragment_upload_contract">Upload  contract</string>
+    <string name="fragment_sterge">Sterge</string>
+    <string name="fragment_modifica">Modifica</string>
 
 
-
-    <string name="data_label">Data</string>
-    <string name="input_data">Data</string>
-
-    <!-- Adauga transport-->
-
-    <string name="input_email">Adresa de e-mail</string>
-
-
-    <!-- Felicitari-->
     <string name="felicitari_title">Felicitari</string>
     <string name="succes_subtitle">Documentul tau a fost creat cu succes</string>
 
 
-    <!-- AdaugaMasina-->
-    <string name="numar_captractor_label">Numar de inmatriculare cap tractor</string>
-    <string name="input_numar_captractor">Dnumar_captractor_label</string>
-    <string name="numar_vagon_label">Numar de inmatriculare vagon</string>
-    <string name="input_numar_vagon">Numar de inmatriculare</string>
+    <!-- Content-->
 
 
-    <!-- AdaugaCredit-->
-    <string name="adauga_numele_card_label">Numele de pe card</string>
-    <string name="adagua_numar_card_label">Numarul cardului</string>
-    <string name="data_expirarii_label">Data expirarii</string>
-    <string name="cvv_label">CVV</string>
-    <string name="mod_plata_label">Selectati modul de plata</string>
-    <string name="mod_plata_ecrm_label">Selectati modul plata e-CRM</string>
+    <string name="content_introductionLogo">Gotrans Logo</string>
+    <string name="content_copyright">2019 GOTRANS SRL toate drepturile sunt rezervate</string>
+    <string name="content_app_name">GoTrans SRL</string>
 
-
-    <!-- profil cont-->
-
-    <string name="cui_label">CUI</string>
-    <string name="input_cui">Selectati modul plata e-CRM</string>
-
-    <string name="numar_ordine_label">Numar de ordine</string>
-    <string name="input_numar_ordine">Numar de ordine</string>
 
     <!-- Buttons sections-->
 
+
     <string name="buton_autentificare">Autentificare</string>
+    <string name="buton_inregistrare">Inregistrare</string>
     <string name="buton_inapoi">Inapoi</string>
     <string name="buton_adauga">Adauga</string>
     <string name="buton_continua">Continua</string>
@@ -214,6 +205,11 @@
     <string name="buton_solicita_stergere_cont">Solicita stergere cont</string>
     <string name="buton_incarca_document">Incarca document</string>
     <string name="buton_termeni_conditii">Sunt de acord cu termenii si conditiile</string>
+    <string name="buton_descarca_proforma">Descarca proforma</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="home_second">Home Second</string>
+
 
 </resources>
 

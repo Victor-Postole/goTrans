@@ -1,146 +1,49 @@
 package com.android.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.LayoutInflater;
+import android.os.Handler;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.BaseAdapter;
-import android.widget.LinearLayout;
-import android.widget.ListView;
+import android.widget.Button;
 import android.widget.TextView;
 
-import com.google.android.material.bottomsheet.BottomSheetDialog;
+import java.text.BreakIterator;
+import java.util.Arrays;
+import java.util.List;
 
 
-public class MainActivity extends AppCompatActivity implements  View.OnClickListener{
+public class MainActivity extends AppCompatActivity{
 
-    public static TextView data;
-    String[]Car_brand= {"MAN 200", "MERCEDES E20","RENAULT A40","MAN 200", "MERCEDES E20","MAN 200", "MERCEDES E20","RENAULT A40","MAN 200", "MERCEDES E20"};
-    String[]Car_number= {"B 27 RTJ", "IL 01 TMS", "CT 40 RMS","B 27 RTJ", "IL 01 TMS","B 27 RTJ", "IL 01 TMS", "CT 40 RMS","B 27 RTJ", "IL 01 TMS"};
-    String[]Car_type = {"Frigorific, 15 tone","Cisterna 25 tone", "Container 50 tone","Frigorific, 15 tone","Cisterna 25 tone","Frigorific, 15 tone","Cisterna 25 tone", "Container 50 tone","Frigorific, 15 tone","Cisterna 25 tone"};
-    String[]Car_drivers = {"Marian Trandafir", "Ionica Mihalache","Marcel Octavian","Mike Markula","Samsung Ionel","Xing", "Smantanel","Marica","Novac","MMAMA"};
-
-    LinearLayout sterge, modifica;
-    BottomSheetDialog bottomSheetDialog;
+    TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
-
-
-//        Intent myIntent = new Intent(MainActivity.this, ValleyJson.class);
-//        MainActivity.this.startActivity(myIntent);
+//        String json_url = "https://cristi.gotrans.ro/cities/index?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTU4NjE3NTM0M30.8s3rMfrVMRymUo4ARjJPX9fEyC5YW-yu8ZjnWpfFDvw";
+//        String json_city = "cities";
+//        List<String> json_items = Arrays.asList("name", "car_number");
 //
+//        HttpGetRequest first_city_request = new HttpGetRequest(json_url,json_city,json_items);
+//        first_city_request.execute();
 
-        setContentView(R.layout.adauga_sofer);
-
-
-
-//        ListView findListView = (ListView)findViewById(R.id.notificationListView);
-//
-//
-//        CustomAdapter customAdapter = new CustomAdapter();
-//        findListView.setAdapter(customAdapter);
-
-//        ModificaSosferi modificaSosferi = new ModificaSosferi();
-//        findListView.setAdapter(modificaSosferi);
-
-        try
-        {
+        try {
             this.getSupportActionBar().hide();
         }
         catch (NullPointerException e){}
 
-        createBottomShitDialog();
+        new Handler().postDelayed(new Runnable(){
+            @Override
+            public void run() {
+                /* Create an Intent that will start the Menu-Activity. */
 
-
-
+                Intent myIntent = new Intent(MainActivity.this, Singup.class);
+                MainActivity.this.startActivity(myIntent);
+                finish();
+            }
+        }, 1000);
     }
 
-    @Override
-    public  void onClick(View view) {
-
-    }
-
-    private void createBottomShitDialog(){
-        if(bottomSheetDialog == null){
-            View view = LayoutInflater.from(this).inflate(R.layout.fragment_modifica, null);
-
-            bottomSheetDialog = new BottomSheetDialog(this);
-            bottomSheetDialog.setContentView(view);
-        }
-    }
-
-    public void showFragmentModifica(View view){
-        bottomSheetDialog.show();
-    }
-
-    class CustomAdapter extends BaseAdapter {
-
-        @Override
-        public int getCount() {
-            return Car_brand.length;
-        }
-
-        @Override
-        public Object getItem(int position) {
-            return null;
-        }
-
-        @Override
-        public long getItemId(int position) {
-            return 0;
-        }
-
-        @Override
-        public View getView(int position, View convertView, ViewGroup parent) {
-            convertView = getLayoutInflater().inflate(R.layout.fragment_masini, null);
-
-            TextView getCarBrand = convertView.findViewById(R.id.truckBrand);
-            TextView getCarNumber = convertView.findViewById(R.id.carNumber);
-            TextView getCarType = convertView.findViewById(R.id.carType);
-
-            getCarBrand.setText(Car_brand[position]);
-            getCarNumber.setText(Car_number[position]);
-            getCarType.setText(Car_type[position]);
-
-            return convertView;
-        }
-    }
-
-    class ModificaSosferi extends BaseAdapter {
-        @Override
-        public int getCount() {
-            return Car_drivers.length;
-        }
-
-        @Override
-        public Object getItem(int position) {
-            return null;
-        }
-
-        @Override
-        public long getItemId(int position) {
-            return 0;
-        }
-
-        @Override
-        public View getView(int position, View convertView, ViewGroup parent) {
-            convertView = getLayoutInflater().inflate(R.layout.fragment_soferi, null);
-
-            TextView getDriversName = convertView.findViewById(R.id.driversName);
-            TextView getDriversCarNumber = convertView.findViewById(R.id.driverNumber);
-
-
-            getDriversName.setText(Car_drivers[position]);
-            getDriversCarNumber.setText(Car_number[position]);
-
-            return convertView;
-        }
-    }
 }
