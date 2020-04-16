@@ -12,7 +12,7 @@ public class AdaugaMasina extends AppCompatActivity implements  View.OnClickList
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.adauga_masina);
+        setContentView(R.layout.activity_adauga_masina);
 
         try {
             this.getSupportActionBar().hide();

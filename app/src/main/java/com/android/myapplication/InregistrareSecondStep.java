@@ -3,7 +3,6 @@ package com.android.myapplication;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,7 +11,7 @@ public class InregistrareSecondStep extends AppCompatActivity implements  View.O
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.registration_second_step);
+        setContentView(R.layout.activity_registration_second_step);
 
         try {
             this.getSupportActionBar().hide();

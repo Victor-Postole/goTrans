@@ -12,7 +12,7 @@ public class AdaugaSofer extends AppCompatActivity implements  View.OnClickListe
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.adauga_sofer);
+        setContentView(R.layout.activity_adauga_sofer);
 
         try {
             this.getSupportActionBar().hide();

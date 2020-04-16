@@ -10,7 +10,7 @@ public class Autentificare extends AppCompatActivity implements  View.OnClickLis
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.autentificare);
+        setContentView(R.layout.activity_autentificare);
 
 
         View buton_autentificare = findViewById(R.id.buton_autentificare);

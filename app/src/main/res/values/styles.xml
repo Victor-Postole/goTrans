@@ -14,7 +14,6 @@
     <style name="NavigationViewStyle">
         <item name="android:textSize">12dp</item> <!-- menu item text size-->
         <item name="android:textColor">@color/darkBlue</item> <!-- menu item text size-->
-        <item name="android:textStyle">normal</item> <!-- menu item text size-->
     </style>
 
 

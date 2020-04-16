@@ -18,11 +18,11 @@ public class NotificationUser extends AppCompatActivity implements  View.OnClick
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.notifications_user);
+        setContentView(R.layout.activity_notifications_user);
 
 
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
-        getSupportActionBar().setCustomView(R.layout.custom_toolbar);
+        getSupportActionBar().setCustomView(R.layout.nav_custom_toolbar);
         initImageView();
 
     }
