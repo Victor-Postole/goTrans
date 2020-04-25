@@ -1,4 +1,4 @@
-package com.android.myapplication;
+package activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,17 +8,19 @@ import android.widget.Spinner;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.util.ArrayList;
+import com.android.myapplication.HttpGetRequest;
+import com.android.myapplication.R;
+
 import java.util.Arrays;
 import java.util.List;
 
-public class Inregistrare extends AppCompatActivity implements  View.OnClickListener{
+public class Registration extends AppCompatActivity implements  View.OnClickListener{
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.registration);
+        setContentView(R.layout.activity_registration);
 
         try {
             this.getSupportActionBar().hide();
@@ -42,12 +44,10 @@ public class Inregistrare extends AppCompatActivity implements  View.OnClickList
         HttpGetRequest first_city_request = new HttpGetRequest(json_url_city,json_city,json_items);
         first_city_request.execute();
 
-
         ArrayAdapter<String> adapter_city = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, first_city_request.getSorted_elements_from_json());
         adapter_city.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         Spinner sItems_city = (Spinner) findViewById(R.id.register_city);
         sItems_city.setAdapter(adapter_city);
-
 
         String json_url_country = "https://cristi.gotrans.ro/countries/index?token=" + token;
         String json_country = "countries";
@@ -64,12 +64,12 @@ public class Inregistrare extends AppCompatActivity implements  View.OnClickList
     public void onClick(View view){
         switch (view.getId()) {
             case R.id.buton_continua:
-                Intent intentInregistrareSecondStep = new Intent(Inregistrare.this, InregistrareSecondStep.class);
-                Inregistrare.this.startActivity(intentInregistrareSecondStep);
+                Intent intentInregistrareSecondStep = new Intent(Registration.this, RegistrationSecondStep.class);
+                Registration.this.startActivity(intentInregistrareSecondStep);
                 break;
             case R.id.back_arrow:
-                Intent backIntent = new Intent(Inregistrare.this, Singup.class);
-                Inregistrare.this.startActivity(backIntent);
+                Intent backIntent = new Intent(Registration.this, Singup.class);
+                Registration.this.startActivity(backIntent);
                 break;
         }
     }

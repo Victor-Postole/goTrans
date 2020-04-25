@@ -1,4 +1,4 @@
-package com.android.myapplication;
+package activities;
 
 
 import android.content.Intent;
@@ -9,6 +9,10 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.android.myapplication.R;
+
+import fragments.Fragment_bottom_options;
 
 
 public class NotificationUser extends AppCompatActivity implements  View.OnClickListener{
@@ -21,9 +25,7 @@ public class NotificationUser extends AppCompatActivity implements  View.OnClick
         setContentView(R.layout.activity_notifications_user);
 
 
-        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
-        getSupportActionBar().setCustomView(R.layout.nav_custom_toolbar);
-        initImageView();
+
 
     }
 
@@ -45,7 +47,7 @@ public class NotificationUser extends AppCompatActivity implements  View.OnClick
                 NotificationUser.this.startActivity(NotificationUser);
                 break;
             case R.id.addNewOptions:
-                Fragment_optiuni bottomSheetFragment = new Fragment_optiuni();
+                Fragment_bottom_options bottomSheetFragment = new Fragment_bottom_options();
                 bottomSheetFragment.show(getSupportFragmentManager(), bottomSheetFragment.getTag());
                 break;
         }

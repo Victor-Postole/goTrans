@@ -1,4 +1,4 @@
-package com.android.myapplication;
+package activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,7 +6,9 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class InregistrareSecondStep extends AppCompatActivity implements  View.OnClickListener{
+import com.android.myapplication.R;
+
+public class RegistrationSecondStep extends AppCompatActivity implements  View.OnClickListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,12 +32,12 @@ public class InregistrareSecondStep extends AppCompatActivity implements  View.O
     public void onClick(View view){
         switch (view.getId()) {
             case R.id.buton_finalizare:
-                Intent intentInregistrareSecondStep = new Intent(InregistrareSecondStep.this, NotificationProfile.class);
-                InregistrareSecondStep.this.startActivity(intentInregistrareSecondStep);
+                Intent intentInregistrareSecondStep = new Intent(RegistrationSecondStep.this, NotificationProfile.class);
+                RegistrationSecondStep.this.startActivity(intentInregistrareSecondStep);
                 break;
             case R.id.back_arrow:
-                Intent backIntent = new Intent(InregistrareSecondStep.this, Inregistrare.class);
-                InregistrareSecondStep.this.startActivity(backIntent);
+                Intent backIntent = new Intent(RegistrationSecondStep.this, Registration.class);
+                RegistrationSecondStep.this.startActivity(backIntent);
                 break;
         }
     }

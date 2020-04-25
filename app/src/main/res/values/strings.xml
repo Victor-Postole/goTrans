@@ -185,7 +185,7 @@
 
     <string name="content_introductionLogo">Gotrans Logo</string>
     <string name="content_copyright">2019 GOTRANS SRL toate drepturile sunt rezervate</string>
-    <string name="content_app_name">GoTrans SRL</string>
+    <string name="content_app_name">GoTrans</string>
 
 
     <!-- Buttons sections-->
@@ -206,11 +206,6 @@
     <string name="buton_incarca_document">Incarca document</string>
     <string name="buton_termeni_conditii">Sunt de acord cu termenii si conditiile</string>
     <string name="buton_descarca_proforma">Descarca proforma</string>
-    <string name="title_activity_main2">Main2Activity</string>
-
-    <string name="home_second">Home Second</string>
-
-
 </resources>
 
 

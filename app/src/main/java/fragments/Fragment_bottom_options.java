@@ -1,28 +1,28 @@
-package com.android.myapplication;
+package fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import activities.AddCar;
+import activities.AddDriver;
+import com.android.myapplication.R;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
 
-public class Fragment_optiuni extends BottomSheetDialogFragment{
+public class Fragment_bottom_options extends BottomSheetDialogFragment{
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
-
+//
 //    @Nullable @Override
 //    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 //        return inflater.inflate(R.layout.fragment_optiuni, container, false);
@@ -43,16 +43,14 @@ public class Fragment_optiuni extends BottomSheetDialogFragment{
         adaugaSofer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getActivity(), AdaugaSofer.class));
+                startActivity(new Intent(getActivity(), AddDriver.class));
             }
         });
-
-
 
         adaugaMasina.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getActivity(), AdaugaMasina.class));
+                startActivity(new Intent(getActivity(), AddCar.class));
             }
         });
 

@@ -1,4 +1,4 @@
-package com.android.myapplication;
+package activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.android.myapplication.R;
 
 
 public class Singup extends AppCompatActivity implements View.OnClickListener {
@@ -16,7 +18,6 @@ public class Singup extends AppCompatActivity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sing_up);
-
 
         try {
             this.getSupportActionBar().hide();
@@ -36,11 +37,11 @@ public class Singup extends AppCompatActivity implements View.OnClickListener {
     {
         switch (view.getId()) {
             case R.id.buton_autentificare:
-                Intent intentAutentificare = new Intent(Singup.this, Autentificare.class);
+                Intent intentAutentificare = new Intent(Singup.this, Authentication.class);
                 Singup.this.startActivity(intentAutentificare);
                 break;
             case R.id.buton_inregistrare:
-                Intent intentInregistrare = new Intent(Singup.this, Inregistrare.class);
+                Intent intentInregistrare = new Intent(Singup.this, Registration.class);
                 Singup.this.startActivity(intentInregistrare);
                 break;
         }

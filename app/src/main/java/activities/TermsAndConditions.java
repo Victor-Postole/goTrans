@@ -1,11 +1,13 @@
-package com.android.myapplication;
+package activities;
 
 import android.os.Bundle;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class TermeniConditii extends AppCompatActivity implements View.OnClickListener {
+import com.android.myapplication.R;
+
+public class TermsAndConditions extends AppCompatActivity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

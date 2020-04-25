@@ -2,8 +2,6 @@ package com.android.myapplication;
 
 import android.app.Activity;
 import android.os.AsyncTask;
-import android.util.Log;
-import android.widget.TextView;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -55,42 +53,21 @@ public class HttpGetRequest extends AsyncTask<Void, Void, Void> {
         //caller.runAfterRequestCompleted(sorted_elements_from_json);
     }
 
-    public List<String> get_json_request(List<String> json_items) {
+    public List<String> get_json_request(List<String> json_fields) {
 
-        URL url;
 
         try{
-            url = new URL(USG_URL);
-            HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
-            httpURLConnection.setRequestMethod("GET");
-            httpURLConnection.connect();
-
-            InputStream inputStream = httpURLConnection.getInputStream();
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
-
-            String line="";
-
-            while (line != null){
-                line = bufferedReader.readLine();
-                bufferdata = bufferdata + line;
-            }
+            bufferdata = readInputStreamFromHTTPRequest( new URL(USG_URL));
 
             try {
 
-                JSONObject jsonObject = new JSONObject(bufferdata);
-                JSONArray jsonArray = jsonObject.getJSONArray(type_of_items);
+                JSONArray jsonArray = stringToJsonArray(bufferdata, type_of_items);
 
-                for(int i=0; i<jsonArray.length();i++){
-                    JSONObject jsonObject1 = jsonArray.getJSONObject(i);
+                SmartJSONArray smartJSONArray = new SmartJSONArray(jsonArray);
 
-//                   JSONObject proprieties =  jsonObject1.getJSONObject("cities");
-//
-                    for (String json_item : json_items) {
-                        finalData =  jsonObject1.get(json_item).toString();
-                        sorted_elements_from_json.add(finalData);
-                    }
-                    Data = Data + finalData;
-                }
+                sorted_elements_from_json = smartJSONArray.getFields(json_fields);
+                Data = concatenateList();
+
 //                for (String json_item : sorted_elements_from_json) {
 //                    Log.e("eeeee",json_item.toString());
 //                }
@@ -104,7 +81,39 @@ public class HttpGetRequest extends AsyncTask<Void, Void, Void> {
             e.printStackTrace();
         }
 
-        return json_items;
+        return json_fields;
+    }
+
+    private String concatenateList() {
+        String result ="";
+        for (String element : sorted_elements_from_json) {
+            result += element;
+        }
+        return result;
+    }
+
+
+
+    private JSONArray stringToJsonArray(String string, String jsonType) throws JSONException {
+        JSONObject jsonObject = new JSONObject(string);
+        return jsonObject.getJSONArray(jsonType);
+    }
+
+    private String readInputStreamFromHTTPRequest(URL url) throws IOException {
+        HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+        httpURLConnection.setRequestMethod("GET");
+        httpURLConnection.connect();
+
+        InputStream inputStream = httpURLConnection.getInputStream();
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+
+        String line="";
+
+        while (line != null){
+            line = bufferedReader.readLine();
+            bufferdata = bufferdata + line;
+        }
+        return bufferdata;
     }
 
     public List<String> getSorted_elements_from_json() {

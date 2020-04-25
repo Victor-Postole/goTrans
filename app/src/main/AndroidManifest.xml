@@ -5,27 +5,28 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:icon="@drawable/white_logo"
         android:allowBackup="true"
         android:label="@string/content_app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AdaugaSofer" />
-        <activity android:name=".AdaugaMasina" />
-        <activity android:name=".Fragment_optiuni" />
-        <activity android:name=".NotificationProfile" />
-        <activity android:name=".NotificationUser" />
-        <activity android:name=".Autentificare" />
-        <activity android:name=".Inregistrare" />
-        <activity android:name=".InregistrareSecondStep" />
-        <activity android:name=".Rewards" />
-        <activity android:name=".Singup" />
+        <activity android:name="activities.AddDriver" />
+        <activity android:name="activities.AddCar" />
+        <activity android:name="fragments.Fragment_bottom_options" />
+        <activity android:name="activities.NotificationProfile" />
+        <activity android:name="activities.NotificationUser" />
+        <activity android:name="activities.Authentication" />
+        <activity android:name="activities.Registration" />
+        <activity android:name="activities.RegistrationSecondStep" />
+        <activity android:name="activities.Rewards" />
+        <activity android:name="activities.Singup" />
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
